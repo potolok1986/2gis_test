@@ -14,6 +14,7 @@ html,body{
 }
 .page{
 	height: 100%;
+	min-width: 520px;
 	background-color: @bg-color;
 	padding: 20px 30px;
 	position: relative;
@@ -39,6 +40,7 @@ html,body{
 	text-align: center;
 	&.wide,&.narrow{
 		width: 400px;
+
 	}
 	&:last-of-type{
 		position: relative;
@@ -47,6 +49,7 @@ html,body{
 		&.wide{
 			width: calc(~"100vw - 120px");
 			max-width: 960px;
+			min-width: 400px;
 		}
 	}
 	&:first-of-type{
