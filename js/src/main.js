@@ -46,6 +46,7 @@ var cardsAPI = {
                 history.pushState($this.cardsList,"");
                 // показываем результат после изменения
                 $this.cardsDisplay();
+            // добавляем класс hover при покидании курсором контейнера
             }).mouseleave(function(){
                 $(this).parent().addClass("hover");
             }).mouseenter(function () {

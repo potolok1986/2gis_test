@@ -11,11 +11,11 @@
 		<script id="cardsList" type="text/x-handlebars-template">
 			<p class="error"> Нет карточек для отображения.<br>
 				Проверьте переменную cards.<br>
-				Или вы просто все карточки удалили
+				Или вы просто все карточки удалили.
 			</p>
 			{{#each cards}}
 			<article class="card {{type}}">
-				<span class="circle">{{inc @index}}</span>
+				<span class="circleIndex">{{inc @index}}</span>
 			</article>
 			{{/each}}
 		</script>
