@@ -8,11 +8,9 @@
 <body>
 <div class="page">
 	<section class="card_container">
-
 		<script id="cardsList" type="text/x-handlebars-template">
 			<p class="error"> Нет карточек для отображения.<br>
-				Проверьте переменную cards.<br>
-				Или вы просто все карточки удалили.
+				Вы удалили все карточки
 			</p>
 			{{#each cards}}
 			<article class="card {{type}}">
@@ -29,7 +27,7 @@
 <script src="js/app.js"></script>
 <!--Если есть необходимость то можно раскоментировать данные файлы -->
 <!--<script src="./js/lib/handlebars-v4.0.5.js"></script>
-<script src="./js/src/Cards.js"></script>
+<script src="./js/src/CardsDeck.js"></script>
 <script src="./js/src/main.js"></script>-->
 </body>
 </html>

@@ -62,7 +62,7 @@ var cardsAPI = {
         }
     },
 // конструктор класса
-    Cards = function (scriptId, container, cards) {
+    CardsDeck = function (scriptId, container, cards) {
         this.scriptId = scriptId;
         this.$container = container;
         this.cardsList = {"cards": cards};
@@ -71,4 +71,4 @@ var cardsAPI = {
         // запускаем все события для окна
         this.addControlEvents();
     };
-Cards.prototype = cardsAPI;
+CardsDeck.prototype = cardsAPI;
